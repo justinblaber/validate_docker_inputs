@@ -24,7 +24,7 @@ This docker has the following INPUTS directory structure:
   -T1.nii.gz (Raw T1 nifti image)
 ```
 
-If the `INPUTS` directory is non-empty but is missing one of the inputs, the following gets returned along with a non-zero exit code:
+If the `/INPUTS` directory is non-empty but is missing one of the inputs, the following gets returned along with a non-zero exit code:
 ```
 $ python validate_docker_inputs.py 
 Incorrect inputs; reason: File does not exist: /INPUTS/T1.nii.gz

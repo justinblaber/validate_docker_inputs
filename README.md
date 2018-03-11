@@ -20,7 +20,7 @@ If the `/INPUTS` directory is empty, the following gets returned along with a no
 ```
 $ python validate_docker_inputs.py 
 This docker has the following INPUTS directory structure: 
-\INPUTS
+/INPUTS
   -T1.nii.gz (Raw T1 nifti image)
 ```
 
@@ -30,7 +30,7 @@ $ python validate_docker_inputs.py
 Incorrect inputs; reason: File does not exist: /INPUTS/T1.nii.gz
 
 This docker has the following INPUTS directory structure: 
-\INPUTS
+/INPUTS
   -T1.nii.gz (Raw T1 nifti image)
 ```
 

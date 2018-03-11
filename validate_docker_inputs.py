@@ -60,7 +60,7 @@ def parse_comments(string):
 def handle_comment(string):
     """ returns 'string (optional comment)' """
     string_parsed = parse_comments(string)
-    if string_parsed[1]:
+    if string_parsed[1]: #pylint: disable-msg=no-else-return
         return string_parsed[0] + ' (' + string_parsed[1] + ')'
     else:
         return string_parsed[0]
@@ -71,7 +71,7 @@ def print_inputs_dict(inputs_dict, depth=0):
         # Print directory - note that root is skipped
         directory = handle_comment(key)
         if depth >= 1:
-            print('  '*(depth-1) + '\\' + directory)
+            print('  '*(depth-1) + '/' + directory)
 
         # Value is either empty or a list
         if not inputs_dict[key]:
